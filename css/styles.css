@@ -1,0 +1,252 @@
+/* raleway-700 - latin */
+/* Для практики один шрифт локально */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/raleway-v16-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/raleway-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --primary-text-color: #212121;
+  --secomdary-text-color: #757575;
+  --accent: #2196f3;
+  --text-dark-theme-color: #fff;
+  --secondary-background-color: #f5f4fa;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--text-dark-theme-color);
+
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.main-subtitle {
+  color: var(--text-dark-theme-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* НАВИГАЦИЯ */
+
+.header {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.logo {
+  margin-right: 85px;
+
+  color: #000;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-link.studio {
+  color: var(--accent);
+}
+
+/* АДРЕСС НАВИГАЦИИ */
+
+.address-header {
+  margin-left: auto;
+}
+
+.address-header-list {
+  display: flex;
+}
+
+.adress-header-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.address-header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secomdary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address-header-link:hover,
+.address-header-link:focus,
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent);
+}
+
+/* ЗАГОЛОВОК */
+
+.main-heading {
+  /* Временно для просмотра */
+  color: #731482;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-heading-order-button {
+  background-color: var(--accent);
+  color: var(--text-dark-theme-color);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* О НАС */
+
+.about-us-description {
+  color: var(--secomdary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* НАША КОМАНДА */
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-profession {
+  color: var(--secomdary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+  background: #2f303a;
+}
+
+.footer-address-block > a {
+  color: var(--text-dark-theme-color);
+}
+
+.footer-address-list-item-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.street {
+  color: var(--text-dark-theme-color);
+}
+
+/* СТРАНИЦА ПОРТФОЛИО */
+
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent);
+  color: var(--text-dark-theme-color);
+}
+
+.portfolo-subtitle {
+  color: var(--primary-text-color);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolo-subtitle-type {
+  color: var(--secomdary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
