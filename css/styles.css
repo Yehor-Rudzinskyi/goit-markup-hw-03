@@ -90,6 +90,7 @@ address {
 }
 
 .logo {
+  display: block;
   margin-right: 85px;
 
   color: #000;
@@ -335,10 +336,20 @@ address {
 
 .footer-block {
   display: flex;
+  align-items: baseline;
+}
+
+.footer-address-block {
+  margin-right: 69px;
 }
 
 .footer-address-block > a {
   color: var(--text-dark-theme-color);
+}
+
+.logo-f {
+  margin-right: 0px;
+  margin-bottom: 20px;
 }
 
 .footer-address-list-item-link {
@@ -346,6 +357,10 @@ address {
 
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .street {
