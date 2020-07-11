@@ -336,11 +336,18 @@ address {
 
 .footer-block {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
-.footer-address-block {
-  margin-right: 69px;
+.first-footer-block {
+  min-width: 270px;
+  width: calc((50% - 45px) / 2);
+}
+
+.footer-forma {
+  width: calc(50% - 15px);
+  min-width: 570px;
 }
 
 .footer-address-block > a {
@@ -373,6 +380,21 @@ address {
 
 /* СТРАНИЦА ПОРТФОЛИО */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-btn-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
@@ -385,7 +407,17 @@ address {
   color: var(--text-dark-theme-color);
 }
 
-.portfolo-subtitle {
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-cards-img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+. .portfolo-subtitle {
   color: var(--primary-text-color);
 
   font-weight: bold;
